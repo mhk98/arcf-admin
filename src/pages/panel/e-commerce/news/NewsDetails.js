@@ -400,7 +400,7 @@ const NewsDetails = () => {
                     </DataTableRow> */}
                     <DataTableRow size="sm">
                       <span className="tb-product">
-                        <img src={`http://localhost:5000/${item.image}`} alt="product" className="thumb" />
+                        <img src={`https://server.arcfbd.org/${item.image}`} alt="product" className="thumb" />
                       </span>
                     </DataTableRow>
 
@@ -578,7 +578,7 @@ const NewsDetails = () => {
                           {file ? (
                             <img src={file} alt="" />
                           ) : (
-                            <img src={`http://localhost:5000/${editData.image}`} alt="" />
+                            <img src={`https://server.arcfbd.org/${editData.image}`} alt="" />
                           )}
                         </div>
                       </div>

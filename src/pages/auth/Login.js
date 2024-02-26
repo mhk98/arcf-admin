@@ -31,7 +31,7 @@ const Login = () => {
 
     console.log(data);
     try {
-      const response = await axios.post("http://localhost:5000/api/v1/user/login", data);
+      const response = await axios.post("https://server.arcfbd.org/api/v1/user/login", data);
 
       if (response.data.status === "Success" && response.data.data.user.role === "admin") {
         localStorage.setItem("token", response.data.data.accessToken);

@@ -515,22 +515,22 @@ const GalleryBannerDescription = () => {
                     </DataTableRow> */}
                     <DataTableRow size="sm">
                       <span className="tb-product">
-                        <img src={`http://localhost:5000/${item.image1}`} alt="product" className="thumb" />
+                        <img src={`https://server.arcfbd.org/${item.image1}`} alt="product" className="thumb" />
                       </span>
                     </DataTableRow>
                     <DataTableRow size="sm">
                       <span className="tb-product">
-                        <img src={`http://localhost:5000/${item.image2}`} alt="product" className="thumb" />
+                        <img src={`https://server.arcfbd.org/${item.image2}`} alt="product" className="thumb" />
                       </span>
                     </DataTableRow>
                     <DataTableRow size="sm">
                       <span className="tb-product">
-                        <img src={`http://localhost:5000/${item.image3}`} alt="product" className="thumb" />
+                        <img src={`https://server.arcfbd.org/${item.image3}`} alt="product" className="thumb" />
                       </span>
                     </DataTableRow>
                     <DataTableRow size="sm">
                       <span className="tb-product">
-                        <img src={`http://localhost:5000/${item.image4}`} alt="product" className="thumb" />
+                        <img src={`https://server.arcfbd.org/${item.image4}`} alt="product" className="thumb" />
                       </span>
                     </DataTableRow>
 
@@ -706,7 +706,7 @@ const GalleryBannerDescription = () => {
                           {file1 ? (
                             <img src={file1} alt="" />
                           ) : (
-                            <img src={`http://localhost:5000/${editData.image1}`} alt="" />
+                            <img src={`https://server.arcfbd.org/${editData.image1}`} alt="" />
                           )}
                         </div>
                       </div>
@@ -721,7 +721,7 @@ const GalleryBannerDescription = () => {
                           {file2 ? (
                             <img src={setFile2} alt="" />
                           ) : (
-                            <img src={`http://localhost:5000/${editData.image2}`} alt="" />
+                            <img src={`https://server.arcfbd.org/${editData.image2}`} alt="" />
                           )}
                         </div>
                       </div>
@@ -736,7 +736,7 @@ const GalleryBannerDescription = () => {
                           {file3 ? (
                             <img src={file3} alt="" />
                           ) : (
-                            <img src={`http://localhost:5000/${editData.image3}`} alt="" />
+                            <img src={`https://server.arcfbd.org/${editData.image3}`} alt="" />
                           )}
                         </div>
                       </div>
@@ -751,7 +751,7 @@ const GalleryBannerDescription = () => {
                           {file4 ? (
                             <img src={file4} alt="" />
                           ) : (
-                            <img src={`http://localhost:5000/${editData.image4}`} alt="" />
+                            <img src={`https://server.arcfbd.org/${editData.image4}`} alt="" />
                           )}
                         </div>
                       </div>
