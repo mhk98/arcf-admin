@@ -1,9 +1,9 @@
 import Router from "./route/Index";
 
 import { Toaster } from "react-hot-toast";
-import ThemeProvider from "./layout/provider/Theme";
 import { Provider } from "react-redux";
 import store from "./app/store";
+import ThemeProvider from "./layout/provider/Theme";
 
 const App = () => {
   return (

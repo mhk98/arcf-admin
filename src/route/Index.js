@@ -25,6 +25,7 @@ import ImageGallery from "../pages/panel/e-commerce/imageGallery/ImageGallery";
 import ForgotPassword from "../pages/auth/ForgotPassword";
 import Login from "../pages/auth/Login";
 import Register from "../pages/auth/Register";
+import RequireAuth from "../pages/auth/RequireAuth";
 import Success from "../pages/auth/Success";
 import AllUser from "../pages/panel/e-commerce/allUser/AllUser";
 import ContactSlider from "../pages/panel/e-commerce/contactSlider/ContactSlider";
@@ -87,44 +88,289 @@ const Router = () => {
         <Route path="_blank" element={<Blank />}></Route> */}
         {/* <Route path="ecommerce"> */}
         {/* <Route index element={<EcomDashboard />}></Route> */}
-        <Route path="/" element={<AllUser />}></Route>
-        <Route path="/slider" element={<Slider />}></Route>
-        <Route path="faq" element={<Faq />}></Route>
-        <Route path="who-we-are" element={<About />}></Route>
-        <Route path="banner" element={<Banner />}></Route>
-        <Route path="about-arcf" element={<AboutARCF />}></Route>
-        <Route path="ex-chairman" element={<Chairman />}></Route>
-        <Route path="chairman" element={<CurrentChairman />}></Route>
-        <Route path="vice-chairman" element={<ViceChairman />}></Route>
-        <Route path="assistant-vice-chairman" element={<AssistantViceChairman />}></Route>
-        <Route path="management" element={<Management />}></Route>
-        <Route path="volunteer" element={<Volunteer />}></Route>
-        <Route path="director" element={<Director />}></Route>
-        <Route path="projects" element={<Projects />}></Route>
-        <Route path="project-banner" element={<ProjectBanner />}></Route>
-        <Route path="project-details" element={<ProjectDetails />}></Route>
+        <Route
+          path="/"
+          element={
+            <RequireAuth>
+              <AllUser />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/slider"
+          element={
+            <RequireAuth>
+              <Slider />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="faq"
+          element={
+            <RequireAuth>
+              <Faq />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="who-we-are"
+          element={
+            <RequireAuth>
+              <About />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="banner"
+          element={
+            <RequireAuth>
+              <Banner />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="about-arcf"
+          element={
+            <RequireAuth>
+              <AboutARCF />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="ex-chairman"
+          element={
+            <RequireAuth>
+              <Chairman />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="chairman"
+          element={
+            <RequireAuth>
+              <CurrentChairman />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="vice-chairman"
+          element={
+            <RequireAuth>
+              <ViceChairman />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="assistant-vice-chairman"
+          element={
+            <RequireAuth>
+              <AssistantViceChairman />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="management"
+          element={
+            <RequireAuth>
+              <Management />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="volunteer"
+          element={
+            <RequireAuth>
+              <Volunteer />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="director"
+          element={
+            <RequireAuth>
+              <Director />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="projects"
+          element={
+            <RequireAuth>
+              <Projects />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="project-banner"
+          element={
+            <RequireAuth>
+              <ProjectBanner />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="project-details"
+          element={
+            <RequireAuth>
+              <ProjectDetails />
+            </RequireAuth>
+          }
+        ></Route>
 
-        <Route path="news-banner" element={<NewsBanner />}></Route>
-        <Route path="news-details" element={<NewsDetails />}></Route>
-        <Route path="news" element={<UpcomingNews />}></Route>
-        <Route path="news-category-description" element={<NewsCategoryDescription />}></Route>
-        <Route path="events" element={<UpcomingEvents />}></Route>
-        <Route path="events-banner" element={<EventsBanner />}></Route>
-        <Route path="events-details" element={<EventsDetails />}></Route>
-        <Route path="events-category-description" element={<EventsCategoryDescription />}></Route>
+        <Route
+          path="news-banner"
+          element={
+            <RequireAuth>
+              <NewsBanner />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="news-details"
+          element={
+            <RequireAuth>
+              <NewsDetails />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="news"
+          element={
+            <RequireAuth>
+              <UpcomingNews />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="news-category-description"
+          element={
+            <RequireAuth>
+              <NewsCategoryDescription />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="events"
+          element={
+            <RequireAuth>
+              <UpcomingEvents />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="events-banner"
+          element={
+            <RequireAuth>
+              <EventsBanner />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="events-details"
+          element={
+            <RequireAuth>
+              <EventsDetails />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="events-category-description"
+          element={
+            <RequireAuth>
+              <EventsCategoryDescription />
+            </RequireAuth>
+          }
+        ></Route>
 
-        <Route path="health" element={<Health />}></Route>
-        <Route path="project-banner" element={<ProjectBanner />}></Route>
+        <Route
+          path="health"
+          element={
+            <RequireAuth>
+              <Health />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="project-banner"
+          element={
+            <RequireAuth>
+              <ProjectBanner />
+            </RequireAuth>
+          }
+        ></Route>
 
-        <Route path="project-subcategory" element={<ProjectSubCategory />}></Route>
-        <Route path="project-subcategory-header" element={<ProjectSubCategoryHeader />}></Route>
-        <Route path="project-subcategory-description" element={<ProjectSubCategoryDescription />}></Route>
-        <Route path="gallery-category-description" element={<GalleryBannerDescription />}></Route>
-        <Route path="image-gallery" element={<ImageGallery />}></Route>
-        <Route path="video-gallery" element={<VideoGallery />}></Route>
-        <Route path="donation-banner-description" element={<DonationBannerDescription />}></Route>
-        <Route path="donation" element={<Donation />}></Route>
-        <Route path="contact-slider" element={<ContactSlider />}></Route>
+        <Route
+          path="project-subcategory"
+          element={
+            <RequireAuth>
+              <ProjectSubCategory />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="project-subcategory-header"
+          element={
+            <RequireAuth>
+              <ProjectSubCategoryHeader />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="project-subcategory-description"
+          element={
+            <RequireAuth>
+              <ProjectSubCategoryDescription />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="gallery-category-description"
+          element={
+            <RequireAuth>
+              <GalleryBannerDescription />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="image-gallery"
+          element={
+            <RequireAuth>
+              <ImageGallery />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="video-gallery"
+          element={
+            <RequireAuth>
+              <VideoGallery />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="donation-banner-description"
+          element={
+            <RequireAuth>
+              <DonationBannerDescription />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="donation"
+          element={
+            <RequireAuth>
+              <Donation />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="contact-slider"
+          element={
+            <RequireAuth>
+              <ContactSlider />
+            </RequireAuth>
+          }
+        ></Route>
 
         {/* <Route path="subcategory-details" element={<ProjectSubCategoryDetails />}></Route> */}
         {/* <Route path="health-banner" element={<HealthBanner />}></Route>

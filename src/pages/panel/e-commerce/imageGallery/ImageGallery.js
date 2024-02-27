@@ -39,7 +39,18 @@ const ImageGallery = () => {
   const [image, setImage] = useState("");
   const [sm, updateSm] = useState(false);
 
-  const { data, isLoading, error } = useGetAllImageGalleryQuery();
+  const { data, isLoading, isError, error } = useGetAllImageGalleryQuery();
+  const [imageGallery, setImageGallery] = useState([]);
+  useEffect(() => {
+    if (isError) {
+      console.error("Error fetching health data", error);
+    } else if (!isLoading) {
+      if (data) {
+        setImageGallery(data.data);
+      }
+    }
+  }, [data, isLoading, isError, error]);
+
   const [createImageGallery] = useCreateImageGalleryMutation();
   const [updateId, setUpdateId] = useState("");
   const [editData, setEditData] = useState({});
@@ -241,7 +252,7 @@ const ImageGallery = () => {
   const indexOfLastItem = currentPage * itemPerPage;
   const indexOfFirstItem = indexOfLastItem - itemPerPage;
 
-  const currentItems = data.data.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = imageGallery.slice(indexOfFirstItem, indexOfLastItem);
 
   // console.log("currentItems", currentItems);
   // Change Page
@@ -492,10 +503,10 @@ const ImageGallery = () => {
           </div>
 
           <PreviewAltCard>
-            {data.data.length > 0 ? (
+            {imageGallery.length > 0 ? (
               <PaginationComponent
                 itemPerPage={itemPerPage}
-                totalItems={data.data.length}
+                totalItems={imageGallery.length}
                 paginate={paginate}
                 currentPage={currentPage}
               />

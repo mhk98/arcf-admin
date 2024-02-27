@@ -637,9 +637,9 @@ const AllUser = () => {
                 <Col size="12">
                   <Form.Select aria-label="Default select example" onChange={(e) => setRole(e.target.value)}>
                     <option value="">Choose User Role</option>
-                    <option value="Employee">employee</option>
-                    <option value="Admin">admin</option>
-                    <option value="Super Admin">super admin</option>
+                    <option value="employee">employee</option>
+                    <option value="admin">admin</option>
+                    <option value="super admin">super admin</option>
                   </Form.Select>
                 </Col>
                 <Col size="6">
