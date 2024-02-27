@@ -172,7 +172,7 @@ const ContactSlider = () => {
 
   //   console.log("formData", formData);
   //   try {
-  //     const data = await axios.put(`http://localhost:5000/api/v1/category/${updateId}`, formData);
+  //     const data = await axios.put(`https://server.arcfbd.org/api/v1/category/${updateId}`, formData);
 
   //     if (data) {
   //       toast.success(data.data.message);
@@ -442,17 +442,17 @@ const ContactSlider = () => {
                     </DataTableRow> */}
                     <DataTableRow size="sm">
                       <span className="tb-product">
-                        <img src={`http://localhost:5000/${item.image1}`} alt="product" className="thumb" />
+                        <img src={`https://server.arcfbd.org/${item.image1}`} alt="product" className="thumb" />
                       </span>
                     </DataTableRow>
                     <DataTableRow size="sm">
                       <span className="tb-product">
-                        <img src={`http://localhost:5000/${item.image2}`} alt="product" className="thumb" />
+                        <img src={`https://server.arcfbd.org/${item.image2}`} alt="product" className="thumb" />
                       </span>
                     </DataTableRow>
                     <DataTableRow size="sm">
                       <span className="tb-product">
-                        <img src={`http://localhost:5000/${item.image3}`} alt="product" className="thumb" />
+                        <img src={`https://server.arcfbd.org/${item.image3}`} alt="product" className="thumb" />
                       </span>
                     </DataTableRow>
                     <DataTableRow size="sm">
@@ -604,7 +604,7 @@ const ContactSlider = () => {
                           {file1 ? (
                             <img src={file1} alt="" />
                           ) : (
-                            <img src={`http://localhost:5000/${editData.image1}`} alt="" />
+                            <img src={`https://server.arcfbd.org/${editData.image1}`} alt="" />
                           )}
                         </div>
                       </div>
@@ -619,7 +619,7 @@ const ContactSlider = () => {
                           {file2 ? (
                             <img src={file2} alt="" />
                           ) : (
-                            <img src={`http://localhost:5000/${editData.image2}`} alt="" />
+                            <img src={`https://server.arcfbd.org/${editData.image2}`} alt="" />
                           )}
                         </div>
                       </div>
@@ -634,7 +634,7 @@ const ContactSlider = () => {
                           {file3 ? (
                             <img src={file3} alt="" />
                           ) : (
-                            <img src={`http://localhost:5000/${editData.image3}`} alt="" />
+                            <img src={`https://server.arcfbd.org/${editData.image3}`} alt="" />
                           )}
                         </div>
                       </div>

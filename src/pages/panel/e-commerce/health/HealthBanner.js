@@ -144,7 +144,7 @@ const HealthBanner = () => {
 
   //   console.log("formData", formData);
   //   try {
-  //     const data = await axios.put(`http://localhost:5000/api/v1/category/${updateId}`, formData);
+  //     const data = await axios.put(`https://server.arcfbd.org/api/v1/category/${updateId}`, formData);
 
   //     if (data) {
   //       toast.success(data.data.message);
@@ -382,7 +382,7 @@ const HealthBanner = () => {
               <DataTableItem key={projects.Id}>
                 <DataTableRow size="sm">
                   <span className="tb-product">
-                    <img src={`http://localhost:5000/${projects.image}`} alt="product" className="thumb" />
+                    <img src={`https://server.arcfbd.org/${projects.image}`} alt="product" className="thumb" />
                   </span>
                 </DataTableRow>
 

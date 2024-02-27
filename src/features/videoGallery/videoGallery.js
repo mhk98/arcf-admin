@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const videoGalleryApi = createApi({
   reducerPath: "videoGalleryApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:5000/api/v1",
+    baseUrl: "https://server.arcfbd.org/api/v1",
   }),
 
   tagTypes: ["VideoGallery"], // Define the tag type

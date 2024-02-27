@@ -66,7 +66,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/v1/user/signup",
+        "https://server.arcfbd.org/api/v1/user/signup",
 
         formData
       );

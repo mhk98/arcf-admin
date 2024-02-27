@@ -129,7 +129,7 @@ const Faq = () => {
 
   //   console.log("formData", formData);
   //   try {
-  //     const data = await axios.put(`http://localhost:5000/api/v1/category/${updateId}`, formData);
+  //     const data = await axios.put(`https://server.arcfbd.org/api/v1/category/${updateId}`, formData);
 
   //     if (data) {
   //       toast.success(data.data.message);
