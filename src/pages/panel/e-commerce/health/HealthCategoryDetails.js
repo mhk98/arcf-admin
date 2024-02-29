@@ -32,7 +32,7 @@ import {
   useGetAllhealthCategoryDetailsQuery,
   useUpdatehealthCategoryDetailsMutation,
 } from "../../../../features/healthCategoryDetails/healthCategoryDetails";
-import {} from "../../../../features/projects/projects";
+import { } from "../../../../features/projects/projects";
 import Content from "../../../../layout/content/Content";
 import Head from "../../../../layout/head/Head";
 
@@ -310,7 +310,7 @@ const HealthCategoryDetails = () => {
                 </a>
                 <div className="toggle-expand-content" style={{ display: sm ? "block" : "none" }}>
                   <ul className="nk-block-tools g-3">
-                    <li>
+                    {/* <li>
                       <div className="form-control-wrap">
                         <div className="form-icon form-icon-right">
                           <Icon name="search"></Icon>
@@ -352,7 +352,7 @@ const HealthCategoryDetails = () => {
                           </ul>
                         </DropdownMenu>
                       </UncontrolledDropdown>
-                    </li>
+                    </li> */}
                     <li className="nk-block-tools-opt">
                       <Button
                         className="toggle btn-icon d-md-none"

@@ -317,7 +317,7 @@ const Projects = () => {
                 </a>
                 <div className="toggle-expand-content" style={{ display: sm ? "block" : "none" }}>
                   <ul className="nk-block-tools g-3">
-                    <li>
+                    {/* <li>
                       <div className="form-control-wrap">
                         <div className="form-icon form-icon-right">
                           <Icon name="search"></Icon>
@@ -359,7 +359,7 @@ const Projects = () => {
                           </ul>
                         </DropdownMenu>
                       </UncontrolledDropdown>
-                    </li>
+                    </li> */}
                     <li className="nk-block-tools-opt">
                       <Button
                         className="toggle btn-icon d-md-none"
